@@ -29,17 +29,11 @@ This domain focuses on CS graduate student academic information at Colorado Scho
 
 ## Chunking Strategy
 
+**Chunk size:** I will split the PDF documents into chunks of approximately **800 characters** with an overlap of **150 characters**. This chunk size works well because my corpus contains official university PDF documents, including graduate policies, academic regulations, program requirements, tuition information, grading rules, and graduation procedures. These documents are usually organized into sections, headings, and paragraphs, so medium-sized chunks can preserve enough policy context without becoming too broad.
 
+**Overlap:** The overlap helps preserve context when important information appears near the boundary between two chunks. For example, a PDF may introduce a policy in one paragraph and explain the requirement or exception in the next paragraph. Without overlap, the retriever may return only part of the answer.
 
-
-**Chunk size:**
-Splitting the documents into chunks of approximately **800 characters** with an overlap of **150 characters**. This chunk size works well because my corpus contains a mix of short web pages, department information, and student resource pages. The official university pages are usually organised into sections and paragraphs.
-
-**Overlap:**
-The overlap helps preserve context when important information appears near the boundary between two chunks. For example, a page may mention a campus resource in one sentence and explain how students use it in the next sentence. Without overlap, the retriever may return only part of the answer.
-
-**Reasoning:**
-If chunks are too small, the system may retrieve fragments that lack sufficient context to answer the question. If chunks are too large, the retrieved text may include too much unrelated information, making the LLM less grounded. I will evaluate chunk quality by checking whether retrieved chunks are specific, relevant, and complete enough to answer test questions.
+**Reasoning:** If chunks are too small, the system may retrieve fragments that lack enough context to answer the question. If chunks are too large, the retrieved text may include multiple unrelated policies, making the LLM less focused and less grounded. I will evaluate chunk quality by checking whether retrieved chunks are specific, relevant, and complete enough to answer test questions.
 
 ---
 
@@ -67,11 +61,11 @@ Semantic search is useful because it can find related content even when the quer
 
 | # | Test Question | Expected Correct Answer |
 |---|---------------|-------------------------|
-| 1 | Where can students find university department contact information? | The system should point to the Colorado School of Mines Contact Directory and mention that it lists university departments and student support contacts. |
-| 2 | Where can CS students find academic and career resources? | The system should identify the CS@Mines Student Resources page as a source for academic support, career resources, and student services. |
-| 3 | Where can students learn about MS Computer Science degree requirements? | The system should reference the CS@Mines MS Degree Program page and explain that it contains graduate degree and program requirement information. |
-| 4 | Where can students find information about campus dining? | The system should reference the Campus Dining page and mention dining locations, meal plans, and food services. |
-| 5 | Where can students find unofficial student experiences or advice? | The system should reference the Colorado School of Mines subreddit as a source for student discussions, advice, and campus experiences. |
+| 1 | What GPA must graduate students maintain to remain in good academic standing? | The system should reference the Graduate Grading System or Academic Regulations document and explain the minimum GPA requirements for graduate students. |
+| 2 | What are the degree options available in the Computer Science graduate program? | The system should reference the Computer Science Graduate Programs document and describe the MS, Professional MS, PhD, and certificate options. |
+| 3 | What is considered full-time enrollment for a graduate student? | The system should reference the Registration and Tuition Classification document and explain the credit-hour requirements for full-time status. |
+| 4 | What steps are required to apply for graduation? | The system should reference the Graduation or Graduation Requirements document and describe the graduation application and checkout process. |
+| 5 | What happens if a student receives an incomplete grade? | The system should reference the Graduate Grading System document and explain the policies regarding incomplete grades and their resolution. |
 
 ---
 
