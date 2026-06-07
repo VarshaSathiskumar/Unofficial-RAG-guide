@@ -5,7 +5,25 @@ Run with: streamlit run streamlit_app.py
 """
 
 import streamlit as st
+import chromadb
+import ingest
+from chunk import build_chunks
+from embed import store
 from generate import generate
+
+# ---------------------------------------------------------------------------
+# Build ChromaDB on first run if the collection doesn't exist
+# ---------------------------------------------------------------------------
+
+@st.cache_resource(show_spinner="Setting up knowledge base — this only runs once...")
+def build_pipeline():
+    client = chromadb.PersistentClient(path="chroma_db")
+    collection = client.get_or_create_collection("mines_rag")
+    if collection.count() == 0:
+        ingest.main()
+        store(build_chunks())
+
+build_pipeline()
 
 # ---------------------------------------------------------------------------
 # Page config
