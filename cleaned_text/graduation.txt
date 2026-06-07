@@ -1,7 +1,6 @@
 SOURCE: documents/graduation.pdf
 ============================================================
 
-
 Graduation Commencements are held in December and May. Students graduating
 in August may walk in the December graduation ceremony. Students
 eligible to graduate at these times are expected to attend their respective

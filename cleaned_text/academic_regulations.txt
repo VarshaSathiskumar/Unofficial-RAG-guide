@@ -1,7 +1,6 @@
 SOURCE: documents/generalregulations.pdf
 ============================================================
 
-
 Academic Regulations undergraduate taking graduate-level credit must receive approval and
 agree to the specific terms selected.
 - Students requesting the credits as undergraduate credits or those

@@ -1,7 +1,6 @@
 SOURCE: documents/robotics.pdf
 ============================================================
 
-
 Robotics prepare candidates for industry careers in robotics. The thesis MS and
 PhD degrees are designed to prepare students for research careers.
 Combined Program: The Robotics program also offers combined BS+MS

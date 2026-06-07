@@ -1,7 +1,6 @@
 SOURCE: documents/graduationrequirements.pdf
 ============================================================
 
-
 Graduation
 Requirements
 Graduation REGISTRATION and Checkout

@@ -1,7 +1,6 @@
 SOURCE: documents/graduategradingsystem.pdf
 ============================================================
 
-
 Graduate Grading The student and the instructor should discuss the terms for the
 incomplete before the end of the term. The instructor may grant up to one
 System year, but the time limit may be less, to complete outstanding coursework.

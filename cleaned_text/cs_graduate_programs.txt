@@ -1,7 +1,6 @@
 SOURCE: documents/cs.pdf
 ============================================================
 
-
 Computer Science GRADUATE CERTIFICATE IN
 CYBERSECURITY
 The minimum requirements for admission to the Graduate Certificate in

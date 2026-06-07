@@ -1,11 +1,10 @@
 SOURCE: documents/thegraduateschool.pdf
 ============================================================
 
-
 The Graduate School Analytical Geochemistry x x
 Antennas & Radar Technology x
 Applied Chemistry x
-
+https://www.mines.edu/graduate-studies/
 Applied Mathematics and Statistics x x
 Unique Programs Applied Physics x
 Business Analytics x
