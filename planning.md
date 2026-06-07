@@ -116,6 +116,7 @@ For response generation, I will provide the project requirements that the assist
 For debugging, I will use ChatGPT to interpret Python errors, especially issues related to Groq API calls, ChromaDB storage, and retrieval output formatting.
 
 For evaluation, I will use AI tools to help refine test questions and expected answers, but I will manually verify whether the system responses are grounded in the retrieved source chunks.
+
 **Milestone 3 — Ingestion and chunking:**
 
 **Milestone 4 — Embedding and retrieval:**
